@@ -1,3 +1,60 @@
-<p>
-  my-movie works!
-</p>
+<div class="peli-card">
+  <div class="room-name">
+    <p>Room: {{ movieItems.id }}</p>
+    <h3>{{ movieItems.title }}</h3>
+  </div>
+
+  <div class="content-card">
+    <img src="{{ movieItems.poster }}" alt="poster" />
+    <div class="content-card-text">
+
+      <div class="genres">
+
+        <h4>Genres</h4>
+        <div class="genres-list">
+          <ul >
+            <li *ngFor="let genre of movieItems.genres">{{ genre }}</li>
+          </ul>
+
+        </div>
+      </div>
+
+<div class="director">
+  <h4>Director </h4>
+  <p>{{ movieItems.director }}</p>
+
+</div>
+
+<div class="actors">
+  <h4>Actors</h4>
+  <div class="actors-list">
+    <ul>
+      <li  *ngFor="let actor of movieItems.actors">{{ actor }}</li>
+    </ul>
+
+  </div>
+
+</div>
+
+<div class="schedule">
+  <h4>Schedule</h4>
+  <div class="hours-list">
+    <ul >
+      <li *ngFor="let hour of movieItems.hours">{{ hour }}</li>
+    </ul>
+
+  </div>
+
+</div>
+
+<div class="synopsis">
+  <h4>Synopsis</h4>
+  <p>{{ movieItems.synopsis }}</p>
+
+</div>
+
+    </div>
+  </div>
+</div>
+
+<button [routerLink]="['/home']">Home</button>

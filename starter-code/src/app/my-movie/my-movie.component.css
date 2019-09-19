@@ -1,0 +1,74 @@
+.peli-card{
+    display: flex;
+    flex-direction: column
+}
+
+.room-name {
+    display:flex;
+    flex-direction: row;
+    align-items: center
+}
+
+.room-name p {
+    color: grey;
+    margin: 20px;
+    font-size: 1.3rem
+}
+
+.room-name h3 {
+    font-size: 1.5rem;
+    margin-right: 20px;
+    font-weight: 100;
+    color:rgb(65, 57, 57)
+}
+.content-card {
+    display: flex;
+    flex-direction: row;
+}
+.content-card img {
+    width: 250px;
+    height: 350px;
+    margin: 20px 20px 0 20px
+}
+
+.content-card-text {
+    font-size: 1rem;
+}
+
+.genres, .schedule, .actors, .director {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    
+}
+.synopsis {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap
+}
+
+ul li {
+    list-style-type: none
+}
+
+h4 {
+    font-weight: bold
+}
+
+.director h4 {
+margin-right: 30px;
+
+}
+
+.actors h4 {
+    margin-right: 5px
+}
+
+.schedule h4 {
+    margin-right: -10px
+}
+
+.no-padding {
+    padding: 0 !important;
+    margin: 0 !important;
+}

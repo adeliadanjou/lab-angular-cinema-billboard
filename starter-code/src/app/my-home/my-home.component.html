@@ -1,10 +1,8 @@
+<div class="film-cards">
 
-
-<div *ngFor="let movie of moviesService.getMovies()">
-  <p>ROOM: {{movie.room}}</p>
-  
-    <img  (click)="goToMovie(movie.id)" [src]="movie.poster" alt="{{movie.title}}">
-    <h2 [routerLink]="[ '/movie', movie.id]">{{movie.title}}</h2>
-
-
+  <div class="film-card" *ngFor="let movie of moviesService.getMovies()">
+      <p>ROOM: {{movie.room}}</p>
+      <img  (click)="goToMovie(movie.id)" [src]="movie.poster" alt="{{movie.title}}">
+      <h2 [routerLink]="[ '/movie', movie.id]">{{movie.title}}</h2>
+  </div>
 </div>
